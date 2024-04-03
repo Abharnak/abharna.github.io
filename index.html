@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d82cefe93f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hi, I'm <span>Abharna</span><br>from Coimbatore</h1>
+        </div>
+    </div>
+</div>
+<!------------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Photo1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-titles">About me</h1>
+                <p>I am an aspiring data analyst.I am passionate about leveraging 
+                    data-driven insights to solve complex problems and drive business growth.
+                    My journey into the world of data analysis began with a fascination for numbers and a curiosity to uncover meaningful patterns within datasets.</p>
+                <p>I have a strong background in Artificial Intelligence and Data Science, 
+                    which has equipped me with the necessary analytical and technical skills to excel in this field.</p>
+                
+                <!-- <p>Continuously learning and adapting to new technologies and methodologies is a cornerstone of my approach. I am committed to expanding my knowledge in data science, machine learning, and statistical analysis to stay at the forefront of the rapidly evolving field of data analytics.</p> -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analyst</span><br>Cleaning,Analysing and getting insights from Big Data</li>
+                        <li><span>Python</span><br>Used to do operations in data.</li>
+                        <li><span>Machine Learning</span><br>Building model to to predict results accurately</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mar 2024 - April 2024</span><br>Codsoft Data science internship</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2026</span><br>Artificial Intelligence and Data Science</li>
+                        <li><span>2024</span><br>HTML,CSS and JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-titles">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Analysing</h2>
+                <p>contents of data analysing</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>HTML,CSS</h2>
+                <p>contents of data analysing</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Machine Learning</h2>
+                <p>contents of data analysing</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-titles">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Plant.jpg">
+                <div class="layer">
+                    <h3>Crop Recommendation System</h3>
+                    <p>Here, the model collects input from soil like N,P,K level, humidity, temperature and rainfall.
+                        Finally, It predicts the best crop suitable to plant on the soil.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Plant Disease Detection</h3>
+                    <p>The model is given with leaf image as input and detects whether it is diseased or not 
+                        and gives information about the type of disease.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/titanic.jpg">
+                <div class="layer">
+                    <h3>Titanic Survival Prediction</h3>
+                    <p>The model predicts whether the user is survived or not using several parameters.
+                        Data visualization is done to extract insights from the data.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abharnak19@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9284543430</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/abharna-k-61a90a256"><i class="fa-brands fa-linkedin"></i></a>    
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Meassage"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <p>copyright © Abharna</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx82wFEfyQJOTlJjwX8gyKGX5tPSccxAESag6oNfvguceWqUqOF7P9WhnQtirwEwECQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
